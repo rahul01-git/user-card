@@ -1,0 +1,84 @@
+:root{
+    --width: 55.6%;
+}
+.userCard {
+    width: 239px;
+    height: 73px;
+    background: #F4F4F4;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    position: relative;
+    left: 18px;
+    top: 55px;
+    letter-spacing: 0.15px;
+    font-style: normal;
+}
+
+.userCard__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    position: absolute;
+    left: 61px;
+    top: 14px;
+}
+
+.userCard__title {
+    position: absolute;
+    left: 61px;
+    top: 33px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+}
+
+.userCard__initial {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    background: #6200EE;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userCard__progressBar::before {
+    content: "";
+    position: absolute;
+    background: #922EE0;
+    border-radius: 5.5px;
+    width: var(--width);
+    height: 6px;
+}
+
+.userCard__progressBar {
+    position: absolute;
+    width: 164px;
+    height: 6px;
+    left: 61px;
+    top: 54px;
+    background: #FFFFFF;
+    border-radius: 5.5px;
+}
+
+.userCard__status {
+    width: 5px;
+    height: 5px;
+    margin-left: 3px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active{
+    background: #19E26A;
+}
+.inactive{
+    background: gray;
+}
