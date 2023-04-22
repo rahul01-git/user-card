@@ -88,7 +88,7 @@
 /* new  */
 table {
     background-color: #fff;
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 0 10px;
     width: 700px;
     text-align: left;
@@ -107,7 +107,6 @@ thead th:first-child {
 
 tbody td {
     height: 56px;
-    padding: 10px;
 }
 
 

@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Status({status}) {
   return( 
-    <td><button className={`status ${status}`}>{status}</button></td>
+    <td><button className={`status ${status || 'blocked'}`}>{status || 'blocked'}</button></td>
   )
 }
