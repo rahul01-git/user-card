@@ -22,7 +22,7 @@ export default function UserCard({ data }) {
         <tbody>
           {data.users.map((user, index) => {
             return (
-              <tr key={index} className='row-gap'>
+              <tr key={index}>
                   <Name name={user.full_name} />
                   <Position designation={user.designation} />
                   <Status status={user.active_status} />
