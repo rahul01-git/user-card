@@ -1,20 +1,40 @@
-import React, { Component } from 'react'
-import '../assets/userCard.css'
-import NameAndInitial from './NameAndInitial'
+import React from 'react'
+import Name from './Name'
+import Position from './Position'
+import Status from './Status'
 import ProgressBar from './ProgressBar'
-import Designation from './Designation'
-export default class UserCard extends Component {
-  constructor() {
-    super()
-    this.state = { name: null, percentage: null, designation: null, status: null }
-  }
-  render() {
-    return (
-      <div className='userCard'>
-          <NameAndInitial name={this.state.name} status={this.state.status}/>
-          <Designation designation={this.state.designation}/>
-          <ProgressBar percentage={this.state.percentage}/>
-      </div >
-    )
-  }
+import Action from './Action'
+import '../assets/userCard.css'
+
+export default function UserCard({ data }) {
+  return (
+    <>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Status</th>
+            <th>Progress</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.users.map((user, index) => {
+            return (
+              <tr key={index} className='row-gap'>
+                  <Name name={user.full_name} />
+                  <Position designation={user.designation} />
+                  <Status status={user.active_status} />
+                  <ProgressBar progress={user.download_completed_rate} />
+                  <Action action={user.invited_status} />
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
+
+    </>
+  );
+
 }

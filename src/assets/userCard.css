@@ -1,7 +1,8 @@
-:root{
-    --width: 55.6%;
+:root {
+    --width: 50%;
 }
-.userCard {
+
+/* .userCard {
     width: 239px;
     height: 73px;
     background: #F4F4F4;
@@ -81,4 +82,140 @@
 }
 .inactive{
     background: gray;
+} */
+
+
+/* new  */
+table {
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 700px;
+    text-align: left;
+    letter-spacing: 0.15px;
+}
+
+thead {
+    height: 47px;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+thead th:first-child {
+    padding-left: 47px;
+}
+
+tbody td {
+    height: 56px;
+    padding: 10px;
+}
+
+
+input[type="checkbox"] {
+    margin-left: 15px;
+    margin-right: 22px;
+}
+
+.action {
+    width: 77px;
+    height: 23px;
+    border-radius: 3px;
+    color: #FFF;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.action.invited {
+    background: #6200EE;
+}
+
+.action.not_invited {
+    background: #B1B1B1;
+}
+
+.action.remove {
+    background: #ff0000;
+}
+
+
+.status {
+    font-weight: 600;
+    width: 60px;
+    height: 17px;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 9px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.status.active {
+    background: #19E26A;
+}
+
+.status.inactive {
+    background: #B1B1B1;
+}
+
+.status.blocked {
+    background: #ff0000;
+}
+
+.progress {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    border-radius: 3px;
+}
+
+.progressBar {
+    background: #F0F0F0;
+    width: 104px;
+    height: 13px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.progressBar::before {
+    content: '';
+    position: absolute;
+    background: #19E26A;
+    width: var(--width);
+    height: 13px;
+    border-radius: 3px;
+}
+
+.designation {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #767676;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.initial {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    background: #6200EE;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
 }
